@@ -1,0 +1,5 @@
+[[pattern]]
+id='EXAMPLE-TODO'
+kind='phrase'
+pattern='unfinished example'
+applies_to=['core','spine']

@@ -1,0 +1,128 @@
+# Every pattern follows a recorded operator correction.
+# Applies to living core and spine prose. Preserve fixed records and necessary
+# historical evidence. Catalogue patterns and code/path examples are data.
+# Phrase matches are case-insensitive whole words/phrases. Regexes carry flags.
+# A match is a finding to classify, never authority to delete or change meaning.
+# Judgment entries are read by an auditor and never matched by a script.
+# GUI-derived entries apply to authored operator-facing content; literal words
+# in technical discussion and source comments require contextual review.
+# No general blacklist of fashionable filler words is inferred from a correction
+# to task titles; SL13 records that correction at its actual scope.
+
+[[pattern]]
+id = "SL01"
+kind = "phrase"
+context = "name_change"
+pattern = "formerly"
+applies_to = ["core", "spine"]
+why = "Living canon uses the current identity without narrating a change."
+source = "T664-036"
+
+[[pattern]]
+id = "SL02"
+kind = "phrase"
+context = "name_change"
+pattern = "previously"
+applies_to = ["core", "spine"]
+why = "Living canon uses the current identity without narrating a change."
+source = "T664-036"
+
+[[pattern]]
+id = "SL03"
+kind = "phrase"
+context = "name_change"
+pattern = "renamed from"
+applies_to = ["core", "spine"]
+why = "Living canon uses the current identity without narrating a change."
+source = "T664-036"
+
+[[pattern]]
+id = "SL04"
+kind = "phrase"
+context = "name_change"
+pattern = "migrated"
+applies_to = ["core", "spine"]
+why = "Living canon uses the current identity without narrating a change."
+source = "T775-006"
+
+[[pattern]]
+id = "SL05"
+kind = "phrase"
+context = "name_change"
+pattern = "superseded"
+applies_to = ["core", "spine"]
+why = "Living canon uses the current identity without narrating a change."
+source = "T775-006"
+
+[[pattern]]
+id = "SL06"
+kind = "regex"
+pattern = "(?i)\\b(TODO|FIXME)\\b|\\bplaceholder\\b"
+applies_to = ["core"]
+why = "RW-01-R06 concerns text shown to the operator; technical documents use these words for real things, so this mechanical check applies to core text only."
+source = "RW-01-R06"
+
+[[pattern]]
+id = "SL07"
+kind = "judgment"
+description = "Developer notes, stand-in labels or invented ready states are presented as finished operator-facing content."
+applies_to = ["core", "spine"]
+why = "The operator sees actual content and working behavior."
+source = "RW-01-R06"
+
+[[pattern]]
+id = "SL08"
+kind = "judgment"
+description = "An id, code, number, slug or path stands alone without its human meaning in text addressed to the operator. A terminal or a technical reference may carry a path."
+applies_to = ["core", "spine"]
+why = "The operator can understand what the text refers to."
+source = "OD-2026-10-09-10"
+
+[[pattern]]
+id = "SL09"
+kind = "judgment"
+description = "A document copies the operator’s sentences as its authored explanation instead of citing the source and expressing the fixed points in plain words. Preserve fixed records and source evidence."
+applies_to = ["core", "spine"]
+why = "His source remains evidence and authored explanation stays distinct."
+source = "OD-2026-10-09-09"
+
+[[pattern]]
+id = "SL10"
+kind = "regex"
+pattern = "(?im)^\\s*(?:[-*]\\s*)?(?:boundaries|boundary|not in (?:the )?scope|out of (?:the )?scope|not (?:in|part of) this campaign)\\s*(?:\\(|:)"
+applies_to = ["core", "spine"]
+why = "A directive states its contribution, guardrails and completion conditions."
+source = "OD-2026-10-09-09"
+
+[[pattern]]
+id = "SL11"
+kind = "judgment"
+description = "A brief, charter or directive lists what it does not cover, including an unlabeled list that escapes the mechanical pattern."
+applies_to = ["core", "spine"]
+why = "Scope is stated through the work being done."
+source = "OD-2026-10-09-09"
+
+[[pattern]]
+id = "SL12"
+kind = "judgment"
+description = "A rule fixes today’s technique, number or command where the enduring principle belongs; the means are not recorded beneath it as replaceable settings or current limits."
+applies_to = ["core", "spine"]
+why = "The principle survives a better means of fulfilling it."
+source = "OD-2026-10-17-01"
+
+[[pattern]]
+id = "SL13"
+kind = "judgment"
+description = "Filler words in a worker title hide the major outcome instead of naming it plainly in a few words."
+applies_to = ["core", "spine"]
+why = "The title tells the operator what the task achieves."
+source = "OD-2026-10-10-02"
+
+[[pattern]]
+id = "SL14"
+kind = "judgment"
+description = "An authored graphical-interface string exposes a file path. Session-owned words in a terminal or conversation remain intact."
+applies_to = ["core", "spine"]
+why = "The window speaks in terms meaningful to its user."
+source = "RW-01-R06"
+

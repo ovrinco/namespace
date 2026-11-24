@@ -1,0 +1,11 @@
+[[pattern]]
+id='SL06'
+kind='regex'
+pattern='\bTODO\b'
+applies_to=['core','spine']
+[[pattern]]
+id='SL02'
+kind='phrase'
+pattern='previously'
+context='name_change'
+applies_to=['core','spine']

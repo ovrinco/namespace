@@ -1,0 +1,1 @@
+{"schema":"ovrin.namespace_build/v3","roots":[{"role":"governance","dir":"01_governance"},{"role":"tools","dir":"02_tools"},{"role":"memory","dir":"06_memory"}],"projects":{"demo":{"root":"02_tools/demo"}},"records":{"entries":[{"role":"memory","paths":["**"]}]},"retired_roots":{"02_old":"02_tools"},"consumers":["consumer.sh"],"host":{"entries":[]}}

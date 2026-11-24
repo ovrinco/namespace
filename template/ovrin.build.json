@@ -1,0 +1,61 @@
+{
+  "schema": "ovrin.namespace_build/v3",
+  "roots": [
+    {
+      "role": "constitution",
+      "dir": "00_constitution"
+    },
+    {
+      "role": "governance",
+      "dir": "01_governance"
+    },
+    {
+      "role": "institution",
+      "dir": "02_institution"
+    },
+    {
+      "role": "research",
+      "dir": "03_research"
+    },
+    {
+      "role": "products",
+      "dir": "04_products"
+    },
+    {
+      "role": "surface",
+      "dir": "05_surface"
+    },
+    {
+      "role": "memory",
+      "dir": "06_memory"
+    },
+    {
+      "role": "resources",
+      "dir": "80_resources"
+    },
+    {
+      "role": "archive",
+      "dir": "90_archive"
+    }
+  ],
+  "projects": {
+    "example": {
+      "root": "04_products/example"
+    }
+  },
+  "records": {
+    "entries": [
+      {
+        "role": "memory",
+        "paths": [
+          "records/**"
+        ]
+      }
+    ]
+  },
+  "retired_roots": {},
+  "consumers": [],
+  "host": {
+    "entries": []
+  }
+}

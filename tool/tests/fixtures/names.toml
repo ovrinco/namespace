@@ -1,0 +1,6 @@
+[[name]]
+form = 'QROC'
+wrong = ['Q-ROC', 'q-roc']
+[[retired]]
+name = 'RevRun'
+current = 'Soliton'
