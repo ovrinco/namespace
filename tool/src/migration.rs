@@ -346,7 +346,7 @@ pub(crate) fn reflink(from: &Path, to: &Path) -> Result<()> {
         to,
         Command::new("cp")
             .args([
-                "--reflink=always",
+                "--reflink=auto",
                 "--preserve=all",
                 "--no-clobber",
                 "--no-target-directory",
@@ -357,7 +357,7 @@ pub(crate) fn reflink(from: &Path, to: &Path) -> Result<()> {
             .status(),
     )?;
     if !status.success() || fingerprint(from)? != fingerprint(to)? {
-        return Err(invalid(format!("reflink copy failed: {}", to.display())));
+        return Err(invalid(format!("verified copy failed: {}", to.display())));
     }
     io(to, File::open(to).and_then(|f| f.sync_all()))?;
     Ok(())
