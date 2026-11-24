@@ -29,3 +29,5 @@ Read the [layout guide](docs/LAYOUT.md) for source and runtime boundaries and th
 **[Explore OVRIN Labs](https://ovrinlabs.ca/)** · [Citium research](https://citium.ovrinlabs.ca/) · [Zavent data tools](https://zaventdata.com/)
 
 [Apache-2.0 license](LICENSE) · [Contributing](CONTRIBUTING.md) · [Report a vulnerability privately](SECURITY.md)
+
+The hosted test run excludes folder-color metadata restoration, which requires a desktop GIO metadata service. That test remains available in the full local suite.
